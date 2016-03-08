@@ -34,9 +34,13 @@ version = open("version.txt").read().rstrip()
 packages = ['boost']
 boost_modules = ['system']
 
-# The only thing we do in this file is to call the setup() function with all
+# The only thing we do in this file is to call the setup(
+    namespace_packages=['bob'],
+) function with all
 # parameters that define our package.
 setup(
+    namespace_packages=['bob'],
+
 
     # This is the basic information about your project. Modify all this
     # information before releasing code publicly.
